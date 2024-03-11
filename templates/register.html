@@ -1,0 +1,12 @@
+{% extends "index.html"%}
+
+{% block content %}
+<h1> Use "testuser" for username and password</h1>
+<form method="POST" action="/login">
+    UserName <input type="text" name="username" />
+    <br>
+    Password <input type="text" name="password" />
+    <br>
+    <input type="submit">
+  </form>
+{% endblock %}

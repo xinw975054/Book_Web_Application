@@ -1,0 +1,23 @@
+{% extends "index.html"%}
+{%block content %}
+    <div class='container'>
+        <div class='row'>
+            <div class='col'>
+                <h1>Upload Image</h1> <br>
+
+                <form action="/addimage" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label>Select image</label>
+                        <div class="custom-file">
+                            <input type="file" class = "custom-file-input" name="image" id="image">
+                            <label class="custom-file-label" for="image">Select image...</label>
+                            <input type="number" class="form-control" aria-label="Book Number" name="number" id="number">
+                            <label  for="number">Enter Book Number...</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-lg btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{%endblock%}

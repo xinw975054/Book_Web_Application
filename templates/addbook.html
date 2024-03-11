@@ -1,0 +1,12 @@
+{% extends "index.html"%}
+
+{% block content %}
+<h1> Add a book</h1>
+<form method="POST" action="/addbook">
+    author <input type="text" name="author" />
+    <br>
+    title <input type="text" name="title" />
+    <br>
+    <input type="submit">
+  </form>
+{% endblock %}
